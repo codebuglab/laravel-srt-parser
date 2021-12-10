@@ -1,0 +1,44 @@
+{
+    "name": "codebuglab/laravel-srt-parser",
+    "description": "Simple package to parse SubRip or srt file in Laravel",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mohamed Elkomy",
+            "email": "mo.ah.elkomy@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=7.0",
+        "illuminate/support": ">=6.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "CodeBugLab\\SrtParser\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "CodeBugLab\\SrtParser\\SrtParserServiceProvider"
+            ]
+        }
+    },
+    "keywords": [
+        "subtitles-parsing",
+        "subtitle-parsing",
+        "subtitles-parser",
+        "subtitle-parser",
+        "parser",
+        "subtitles",
+        "subtitle",
+        "srt",
+        "subrip",
+        "srt-parser",
+        "subrip-parser",
+        "php",
+        "laravel"
+    ]
+}
