@@ -14,6 +14,7 @@ class ArrayParserStrategy implements ParserStrategyInterface
     public function parse(string $path): array
     {
         $lines   = file($path);
+        $lines[] = "\n"; // add empty line in the end to show last record
 
         $subs    = [];
 
