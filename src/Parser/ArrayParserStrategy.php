@@ -27,6 +27,9 @@ class ArrayParserStrategy implements ParserStrategyInterface
         foreach ($lines as $line) {
             switch ($state) {
                 case self::STATE_NUMBER:
+                    if (trim($line) == '') {
+                        break;
+                    }
                     $subNumber = trim($line);
                     $state  = self::STATE_TIME;
                     break;
