@@ -42,6 +42,8 @@ class ArrayParserStrategy implements ParserStrategyInterface
                         $sub = [];
                         $sub['number'] = $subNumber;
                         list($sub['startTime'], $sub['stopTime']) = explode(' --> ', $subTime);
+                        $sub['startTime'] = str_replace(".", ",", $sub['startTime']);
+                        $sub['stopTime'] = str_replace(".", ",", $sub['stopTime']);
                         $sub['duration'] = $this->getLineDuration($sub['startTime'], $sub['stopTime']);
                         $sub['text']   = $this->prepareText($subText);
                         $subText     = [];
